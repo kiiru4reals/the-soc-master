@@ -12,10 +12,10 @@ run_script() {
 
 while true; do
     echo "Select an option to run: (Each script has a really bad (should I say dark?) joke, pardon my sense of humor)" 
-    echo "1) Privileged access (business and non-business hours)"
+    echo "1) Privileged access: Users who ran special operations successfully. (business and non-business hours)"
     echo "2) Network logon (business and non-business hours)"
-    echo "3) Privileged operations report"
-    echo "4) Failed logon (Domain Controller)"
+    echo "3) Privileged operations report: Failed privileged operations "
+    echo "4) Failed logon attempts made to the domain controller"
     echo "5) Account management"
     echo "6) Installed and uninstalled applications"
     echo "7) Windows successful logon: Unlock and RDP sessions"
