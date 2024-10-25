@@ -1,20 +1,35 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Overview
+The SOC master helps you compile reports from pre-downloaded CSV templates for some of the reports that a SOC analyst may need to compile and share with relevant stakeholders.
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+## Features
+1. Privileged access: Compile reports for successful privileged access to have the username, source IP, destination IP,count and Source hostname.
+2. Network logon: Captures all logon activities in the network (both successful and unsuccessful)
+3. Privileged operations: Compile reports for successful privileged operations performed, failed privileged operations and failed privileged operations within a short time
+4. Failed logon attempts on the domain controller
+5. Account management: New user accounts created, bad password entries, locked accounts, unlocked accounts, disabled and deleted accounts.
+6. INstalled and uninstalled applications
+7. Windows successful logon sessions where there the user was already logged on but their session was locked and RDP connections made to a host which resulted to a successful login.
+8. VPN connections made to your network.
+9. URLs visited on the network.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Getting Started
+Installation: Install this script by cloning the repository as shown below
+```sh
+git clone git@github.com:kiiru4reals/the-soc-master.git
+```
+Create a new directory called `docs` on the root directory.
+```sh
+mkdir docs/
+```
+Navigate to the `daily_reports` directory and make all scripts executable.
+```sh
+cd daily_reports
+sudo chmod +x *.sh
+```
+Run `start.sh` file
+```sh
+./start.sh
+```
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Contribution
+Contributions to this project is welcome! If you have improvements, bug fixes, or new features to suggest, please create a pull request or open an issue on the GitHub repository.
