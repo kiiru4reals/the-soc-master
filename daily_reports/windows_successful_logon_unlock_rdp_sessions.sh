@@ -33,11 +33,11 @@ windows_successful_logon_unlock(){
         third_octet = ip_parts[3];
         
         if (third_octet == 50 || third_octet == 60 || third_octet == 75 || third_octet == 80) {
-            domain = "Upesi-domain";
+            domain = "Z";
         } else if (third_octet == 100) {
-            domain = "Switchlink Africa";
+            domain = "X";
         } else if (third_octet == 1 || third_octet == 0) {
-            domain = "ngaocredit-domain";
+            domain = "Y";
         } else {
             domain = "Unknown-domain";  # Fallback for any unexpected third octet values
         }
@@ -93,11 +93,11 @@ rdp_sessions(){
         third_octet = ip_parts[3];
         
         if (third_octet == 50 || third_octet == 60 || third_octet == 75 || third_octet == 80) {
-            domain = "Upesi-domain";
+            domain = "Y";
         } else if (third_octet == 100) {
             domain = "Switchlink Africa";
         } else if (third_octet == 1 || third_octet == 0) {
-            domain = "ngaocredit-domain";
+            domain = "X";
         } else {
             domain = "Unknown-domain";  # Fallback for any unexpected third octet values
         }

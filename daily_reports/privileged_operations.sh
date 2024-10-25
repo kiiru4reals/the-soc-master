@@ -50,13 +50,13 @@ privileged_operation_performed() {
 
             # Determine the domain based on the third octet
             if (third_octet == 1) {
-                domain = "ngaocredit-domain-1";
+                domain = "X-1";
             } else if (third_octet == 0) {
-                domain = "ngaocredit-domain";
+                domain = "X";
             } else if (third_octet == 50) {
-                domain = "Upesi-domain";
+                domain = "Y";
             } else if (third_octet == 100) {
-                domain = "Switchlink-Africa";
+                domain = "Z";
             } else {
                 domain = "Unknown-domain";  # Fallback for any unexpected third octet values
             }
@@ -124,13 +124,13 @@ failed_attempts_to_perform_a_privileged_operation() {
 
             # Determine the domain based on the third octet
             if (third_octet == 1) {
-                domain = "ngaocredit-domain-1";
+                domain = "X";
             } else if (third_octet == 0) {
-                domain = "ngaocredit-domain";
+                domain = "Y";
             } else if (third_octet == 50) {
-                domain = "Upesi-domain";
+                domain = "Z";
             } else if (third_octet == 100) {
-                domain = "Switchlink-Africa";
+                domain = "A";
             } else {
                 domain = "Unknown-domain";  # Fallback for any unexpected third octet values
             }
@@ -198,13 +198,13 @@ privileged_operation_successfully_performed() {
 
             # Determine the domain based on the third octet
             if (third_octet == 1) {
-                domain = "ngaocredit-domain-1";
+                domain = "X-1";
             } else if (third_octet == 0) {
-                domain = "ngaocredit-domain";
+                domain = "X";
             } else if (third_octet == 50) {
-                domain = "Upesi-domain";
+                domain = "Y";
             } else if (third_octet == 100) {
-                domain = "Switchlink-Africa";
+                domain = "Z";
             } else {
                 domain = "Unknown-domain";  # Fallback for any unexpected third octet values
             }
@@ -272,13 +272,13 @@ multiple_failed_attempts_to_perform_a_privileged_operation_by_the_same_user() {
 
             # Determine the domain based on the third octet
             if (third_octet == 1) {
-                domain = "ngaocredit-domain-1";
+                domain = "X-1";
             } else if (third_octet == 0) {
-                domain = "ngaocredit-domain";
+                domain = "X";
             } else if (third_octet == 50) {
-                domain = "Upesi-domain";
+                domain = "Y";
             } else if (third_octet == 100) {
-                domain = "Switchlink-Africa";
+                domain = "Z";
             } else {
                 domain = "Unknown-domain";  # Fallback for any unexpected third octet values
             }

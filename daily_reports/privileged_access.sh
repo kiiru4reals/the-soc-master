@@ -13,7 +13,7 @@ privileged_access_for_business_hours(){
     tmp_file=$(mktemp)
     sed 's/;/,/g' "$input_file" > "$tmp_file"
 
-    # Process the CSV file
+    # Process the CSV file 
     awk -F, '
     BEGIN {
         OFS=",";
